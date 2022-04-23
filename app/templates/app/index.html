@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+
+{% if category %}
+	<h2>カテゴリー:{{ category.title }} の検索結果</h2>
+{% endif %}
+
+<!-- photos_list.html を読み込んで写真一覧を表示する --> 
+{% include 'app/photos_list.html' %}
+
+{% endblock %}
+
+
